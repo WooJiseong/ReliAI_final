@@ -5,11 +5,11 @@
     "label": 0,
     "original_label": 0,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.030944347381592,
-    "wav": "output/report_assets/yes_0.2_unknown_0000.wav",
-    "png": "output/report_assets/yes_0.2_unknown_0000.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.17032074928283691,
+    "wav": "output/report_assets/yes_0.2_unsafe_0000.wav",
+    "png": "output/report_assets/yes_0.2_unsafe_0000.png"
   },
   {
     "fixture_index": 1,
@@ -17,11 +17,11 @@
     "label": 1,
     "original_label": 1,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.2031466960907,
-    "wav": "output/report_assets/no_0.2_unknown_0001.wav",
-    "png": "output/report_assets/no_0.2_unknown_0001.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.028081655502319336,
+    "wav": "output/report_assets/no_0.2_unsafe_0001.wav",
+    "png": "output/report_assets/no_0.2_unsafe_0001.png"
   },
   {
     "fixture_index": 2,
@@ -29,11 +29,11 @@
     "label": 2,
     "original_label": 2,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.085988759994507,
-    "wav": "output/report_assets/up_0.2_unknown_0002.wav",
-    "png": "output/report_assets/up_0.2_unknown_0002.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.02805304527282715,
+    "wav": "output/report_assets/up_0.2_unsafe_0002.wav",
+    "png": "output/report_assets/up_0.2_unsafe_0002.png"
   },
   {
     "fixture_index": 3,
@@ -41,11 +41,11 @@
     "label": 3,
     "original_label": 3,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.064791202545166,
-    "wav": "output/report_assets/down_0.2_unknown_0003.wav",
-    "png": "output/report_assets/down_0.2_unknown_0003.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.028348922729492188,
+    "wav": "output/report_assets/down_0.2_unsafe_0003.wav",
+    "png": "output/report_assets/down_0.2_unsafe_0003.png"
   },
   {
     "fixture_index": 4,
@@ -53,11 +53,11 @@
     "label": 4,
     "original_label": 4,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.092931985855103,
-    "wav": "output/report_assets/left_0.2_unknown_0004.wav",
-    "png": "output/report_assets/left_0.2_unknown_0004.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.02763080596923828,
+    "wav": "output/report_assets/left_0.2_unsafe_0004.wav",
+    "png": "output/report_assets/left_0.2_unsafe_0004.png"
   },
   {
     "fixture_index": 5,
@@ -65,11 +65,11 @@
     "label": 9,
     "original_label": 5,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.10559892654419,
-    "wav": "output/report_assets/go_0.2_unknown_0005.wav",
-    "png": "output/report_assets/go_0.2_unknown_0005.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.028759241104125977,
+    "wav": "output/report_assets/go_0.2_unsafe_0005.wav",
+    "png": "output/report_assets/go_0.2_unsafe_0005.png"
   },
   {
     "fixture_index": 6,
@@ -77,11 +77,11 @@
     "label": 6,
     "original_label": 6,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.34974956512451,
-    "wav": "output/report_assets/on_0.2_unknown_0006.wav",
-    "png": "output/report_assets/on_0.2_unknown_0006.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.027549266815185547,
+    "wav": "output/report_assets/on_0.2_unsafe_0006.wav",
+    "png": "output/report_assets/on_0.2_unsafe_0006.png"
   },
   {
     "fixture_index": 7,
@@ -89,11 +89,11 @@
     "label": 7,
     "original_label": 7,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.17443084716797,
-    "wav": "output/report_assets/off_0.2_unknown_0007.wav",
-    "png": "output/report_assets/off_0.2_unknown_0007.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.028909921646118164,
+    "wav": "output/report_assets/off_0.2_unsafe_0007.wav",
+    "png": "output/report_assets/off_0.2_unsafe_0007.png"
   },
   {
     "fixture_index": 8,
@@ -101,11 +101,11 @@
     "label": 8,
     "original_label": 8,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.167700052261353,
-    "wav": "output/report_assets/stop_0.2_unknown_0008.wav",
-    "png": "output/report_assets/stop_0.2_unknown_0008.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.026315927505493164,
+    "wav": "output/report_assets/stop_0.2_unsafe_0008.wav",
+    "png": "output/report_assets/stop_0.2_unsafe_0008.png"
   },
   {
     "fixture_index": 9,
@@ -113,11 +113,11 @@
     "label": 3,
     "original_label": 9,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.129606246948242,
-    "wav": "output/report_assets/down_0.2_unknown_0009.wav",
-    "png": "output/report_assets/down_0.2_unknown_0009.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.027405261993408203,
+    "wav": "output/report_assets/down_0.2_unsafe_0009.wav",
+    "png": "output/report_assets/down_0.2_unsafe_0009.png"
   },
   {
     "fixture_index": 10,
@@ -127,7 +127,7 @@
     "epsilon": "0.2",
     "status": "unknown",
     "category": "unknown",
-    "time": 20.095404624938965,
+    "time": 20.054457902908325,
     "wav": "output/report_assets/yes_0.2_unknown_0010.wav",
     "png": "output/report_assets/yes_0.2_unknown_0010.png"
   },
@@ -137,11 +137,11 @@
     "label": 1,
     "original_label": 1,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.087506532669067,
-    "wav": "output/report_assets/no_0.2_unknown_0011.wav",
-    "png": "output/report_assets/no_0.2_unknown_0011.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.03293037414550781,
+    "wav": "output/report_assets/no_0.2_unsafe_0011.wav",
+    "png": "output/report_assets/no_0.2_unsafe_0011.png"
   },
   {
     "fixture_index": 12,
@@ -149,11 +149,11 @@
     "label": 2,
     "original_label": 2,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.041024923324585,
-    "wav": "output/report_assets/up_0.2_unknown_0012.wav",
-    "png": "output/report_assets/up_0.2_unknown_0012.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.034526824951171875,
+    "wav": "output/report_assets/up_0.2_unsafe_0012.wav",
+    "png": "output/report_assets/up_0.2_unsafe_0012.png"
   },
   {
     "fixture_index": 13,
@@ -161,11 +161,11 @@
     "label": 3,
     "original_label": 3,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.155529022216797,
-    "wav": "output/report_assets/down_0.2_unknown_0013.wav",
-    "png": "output/report_assets/down_0.2_unknown_0013.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.03777503967285156,
+    "wav": "output/report_assets/down_0.2_unsafe_0013.wav",
+    "png": "output/report_assets/down_0.2_unsafe_0013.png"
   },
   {
     "fixture_index": 14,
@@ -173,11 +173,11 @@
     "label": 4,
     "original_label": 4,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.191356658935547,
-    "wav": "output/report_assets/left_0.2_unknown_0014.wav",
-    "png": "output/report_assets/left_0.2_unknown_0014.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.03566694259643555,
+    "wav": "output/report_assets/left_0.2_unsafe_0014.wav",
+    "png": "output/report_assets/left_0.2_unsafe_0014.png"
   },
   {
     "fixture_index": 15,
@@ -185,11 +185,11 @@
     "label": 5,
     "original_label": 5,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.171410083770752,
-    "wav": "output/report_assets/right_0.2_unknown_0015.wav",
-    "png": "output/report_assets/right_0.2_unknown_0015.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.03555583953857422,
+    "wav": "output/report_assets/right_0.2_unsafe_0015.wav",
+    "png": "output/report_assets/right_0.2_unsafe_0015.png"
   },
   {
     "fixture_index": 16,
@@ -197,11 +197,11 @@
     "label": 6,
     "original_label": 6,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.040040016174316,
-    "wav": "output/report_assets/on_0.2_unknown_0016.wav",
-    "png": "output/report_assets/on_0.2_unknown_0016.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.03752708435058594,
+    "wav": "output/report_assets/on_0.2_unsafe_0016.wav",
+    "png": "output/report_assets/on_0.2_unsafe_0016.png"
   },
   {
     "fixture_index": 17,
@@ -209,11 +209,11 @@
     "label": 2,
     "original_label": 7,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.143198251724243,
-    "wav": "output/report_assets/up_0.2_unknown_0017.wav",
-    "png": "output/report_assets/up_0.2_unknown_0017.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.034377098083496094,
+    "wav": "output/report_assets/up_0.2_unsafe_0017.wav",
+    "png": "output/report_assets/up_0.2_unsafe_0017.png"
   },
   {
     "fixture_index": 18,
@@ -221,11 +221,11 @@
     "label": 8,
     "original_label": 8,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.169612646102905,
-    "wav": "output/report_assets/stop_0.2_unknown_0018.wav",
-    "png": "output/report_assets/stop_0.2_unknown_0018.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.197434663772583,
+    "wav": "output/report_assets/stop_0.2_unsafe_0018.wav",
+    "png": "output/report_assets/stop_0.2_unsafe_0018.png"
   },
   {
     "fixture_index": 19,
@@ -233,10 +233,10 @@
     "label": 9,
     "original_label": 9,
     "epsilon": "0.2",
-    "status": "unknown",
-    "category": "unknown",
-    "time": 20.07857370376587,
-    "wav": "output/report_assets/go_0.2_unknown_0019.wav",
-    "png": "output/report_assets/go_0.2_unknown_0019.png"
+    "status": "unsafe-pgd",
+    "category": "unsafe",
+    "time": 0.0306851863861084,
+    "wav": "output/report_assets/go_0.2_unsafe_0019.wav",
+    "png": "output/report_assets/go_0.2_unsafe_0019.png"
   }
 ]
