@@ -1,0 +1,2 @@
+fixture_index,class,label,original_label,epsilon,status,category,time,wav,png
+0,go,9,3,0.007,safe,safe,4.901065826416016,output/report_assets/go_0.007_safe_0000.wav,output/report_assets/go_0.007_safe_0000.png
