@@ -23,8 +23,46 @@ def seed_everything(seed):
 
 def load_real_features(data_root, split, count):
     dataset = SpeechCommands10(data_root, split=split)
+    indices = list(range(min(count, len(dataset))))
+    return load_dataset_indices(dataset, indices)
+
+
+def sample_indices(dataset, count, seed, strategy):
+    rng = random.Random(seed)
+    if count <= 0 or count >= len(dataset):
+        indices = list(range(len(dataset)))
+        if strategy != "sequential":
+            rng.shuffle(indices)
+        return indices
+
+    if strategy == "sequential":
+        return list(range(count))
+    if strategy == "random":
+        return rng.sample(range(len(dataset)), count)
+    if strategy == "balanced":
+        by_label = {label: [] for label in dataset.commands}
+        for index, (_, label) in enumerate(dataset.samples):
+            by_label[label].append(index)
+        for indices in by_label.values():
+            rng.shuffle(indices)
+
+        selected = []
+        cursor = 0
+        labels = list(dataset.commands)
+        while len(selected) < count:
+            label = labels[cursor % len(labels)]
+            if by_label[label]:
+                selected.append(by_label[label].pop())
+            cursor += 1
+            if cursor > len(dataset.samples) + len(labels) * count:
+                break
+        return selected
+    raise ValueError(f"Unknown sample strategy: {strategy}")
+
+
+def load_dataset_indices(dataset, indices):
     xs, ys, wav_paths = [], [], []
-    for index in range(min(count, len(dataset))):
+    for index in indices:
         x, y = dataset[index]
         xs.append(x)
         ys.append(y)
@@ -76,6 +114,12 @@ def main():
     parser.add_argument("--data-root", default="data/SpeechCommands")
     parser.add_argument("--split", default="validation", choices=("training", "validation", "testing"))
     parser.add_argument("--count", type=int, default=2)
+    parser.add_argument(
+        "--sample-strategy",
+        default="random",
+        choices=("sequential", "random", "balanced"),
+        help="How to choose samples from the selected split.",
+    )
     parser.add_argument("--download", action="store_true")
     parser.add_argument("--force-download", action="store_true")
     parser.add_argument("--no-verify-checksum", action="store_true")
@@ -124,14 +168,15 @@ def main():
             force_download=args.force_download,
             verify_checksum=not args.no_verify_checksum,
         )
-        X, original_labels, wav_paths = load_real_features(
-            args.data_root, args.split, args.count
-        )
+        dataset = SpeechCommands10(args.data_root, split=args.split)
+        indices = sample_indices(dataset, args.count, args.seed, args.sample_strategy)
+        X, original_labels, wav_paths = load_dataset_indices(dataset, indices)
         source = f"SpeechCommands v0.02 {args.split}"
     except Exception as exc:
         reason = str(exc).strip().splitlines()[0]
         print(f"Using synthetic fixture because SpeechCommands is unavailable: {reason}")
         X, original_labels, wav_paths = synthetic_features(args.count)
+        indices = list(range(len(original_labels)))
         source = "synthetic log-mel-shaped fixture"
 
     with torch.no_grad():
@@ -148,6 +193,8 @@ def main():
             "label_semantics": "model predictions used for local stability verification",
             "class_names": COMMANDS_10,
             "wav_paths": wav_paths,
+            "sample_strategy": args.sample_strategy,
+            "sample_indices": indices,
         },
         fixture,
     )
@@ -156,6 +203,8 @@ def main():
     print(f"saved fixture: {fixture}")
     print(f"fixture source: {source}")
     print(f"fixture shape: {tuple(X.shape)} labels: {labels.tolist()}")
+    print(f"original labels: {original_labels.tolist()}")
+    print(f"sample strategy: {args.sample_strategy}")
 
 
 if __name__ == "__main__":
