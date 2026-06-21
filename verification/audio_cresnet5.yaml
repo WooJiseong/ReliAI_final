@@ -17,11 +17,13 @@ data:
 specification:
   type: lp
   norm: .inf
-  epsilon: 0.007
+  epsilon: 0.2
   robustness_type: verified-acc
 
 attack:
-  pgd_order: skip
+  pgd_order: before
+  pgd_steps: 10
+  pgd_restarts: 3
 
 solver:
   batch_size: 32

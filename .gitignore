@@ -1,4 +1,5 @@
 __pycache__/
+.cache/
 
 alpha-beta-CROWN/
 
@@ -22,6 +23,7 @@ verification/results/
 !verification/*.yaml
 
 output/safe_verified/
+output/report_assets/
 
 # Logs and ad-hoc run artifacts
 *.log
